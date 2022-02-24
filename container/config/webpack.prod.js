@@ -9,7 +9,7 @@ const prodConfig = {
     mode: 'production',
     output: {
         filename: '[name].[contenthash].js',
-        // publicPath: '/container/latest/',
+        publicPath: '/container/latest/', //  Unexpected token '<' if not added 
     },
     plugins: [
         new ModuleFederationPlugin ({
